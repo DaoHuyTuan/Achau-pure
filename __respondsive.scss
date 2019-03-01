@@ -1,0 +1,272 @@
+@media (min-width: 576px) {  }
+    html {
+        font-size:10px; 
+    }
+    .desktop-only {
+        display: none;
+    }
+    .displayInline {
+        display: inline-block;
+    }
+    .container {
+        max-width: 560px;
+    }
+    .display-4  {
+        font-size: 2.5rem;
+        font-family: Montserrat;
+    }
+    .display-1 {
+        font-weight: bold;
+    }
+    .biggestH1 {
+        color:#ffffff;
+        background-color:$themeColor2;
+        padding:1rem;
+        display: inline-block;
+    }
+    .header {
+        display: flex;
+        .logo-img {
+            width:10rem;
+            order: 2;
+        }
+        .header-menu {
+            order:1;
+            .hambugerMenu {
+                color: $themeColor2;
+                border:none;
+                border-color: none;
+                font-size: 1.3rem;
+            }
+            .fa-bars {
+                color:$themeColor2;
+            }
+        }
+        .headerBtn {
+            order:3;
+        }
+    }
+    .billBoard {
+        display: flex;
+    }
+    .billBoard-head__img {
+        display: none;
+    }
+    .billBoard-buttonGroup {
+        display: none;
+    }
+    .billBoard-slider {
+        flex-flow: column;
+        .billBoard-controls {
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-between;
+            .billBoard-numSlide {
+                width: 3.5rem;
+                height: 3.5rem;
+                text-align: center;
+            }
+        }
+    }
+    .arrowsBox {
+        display: flex;
+        flex-flow: row;
+    }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    html {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 770px;
+    }
+    .display-4  {
+        font-size: 2.5rem;
+    }
+    .display-1 {
+        font-weight: bold;
+    }
+    .biggestH1 {
+        color:#ffffff;
+        background-color:$themeColor2;
+        padding:1rem;
+        display: inline-block;
+    }
+    .header {
+        display: flex;
+        .logo-img {
+            width:10rem;
+            order: 2;
+        }
+        .header-menu {
+            order:1;
+        }
+        .headerBtn {
+            order:3;
+        }
+    }
+    .billBoard-head__img {
+       display: none;
+    }
+    .billBoard-buttonGroup {
+        display: none;
+    }
+    .billBoard-slider {
+        flex-flow: column;
+        .billBoard-controls {
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-between;
+            .billBoard-numSlide {
+                width: 3.5rem;
+                height: 3.5rem;
+                text-align: center;
+            }
+        }
+    }
+    
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 1260px;
+    }
+    .display-4  {
+        font-size: 2.5rem;
+    }
+    .display-1 {
+        font-weight: bold;
+    }
+    .biggestH1 {
+        color:#ffffff;
+        background-color:$themeColor2;
+        padding:1rem;
+        font-size: 4rem;
+        letter-spacing: 0.25rem;
+        display: inline-block;
+    }
+    .header {
+        display: flex;
+        .logo-img {
+            order: 1;
+        }
+        .header-menu {
+            order:2;
+        }
+        .headerBtn {
+            order:3;
+        }
+    } .billBoard {
+       
+        .billBoard-head {
+            
+            font-weight: bold;
+            .billBoard-head__img {
+                display: inline-block;
+                width: 10rem;
+            }
+            .billBoard-buttonGroup {
+                display: block;
+            }
+        }
+    }
+    .billBoard-slider {
+        flex-flow: row;
+        
+        .billBoard-controls {
+            font-size: 2rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            .billBoard-numSlide {
+                width: 3.5rem;
+                height: 3.5rem;
+                text-align: center;
+            }
+        }
+    }
+    .arrowsBox {
+        display: inline-block;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1280px) { 
+    html {
+        font-size: 16px;
+        font-family: Montserrat;
+    }
+    .display-4  {
+        font-size: 2.5rem;
+        font-family: Montserrat;
+    }
+    .display-1 {
+        font-weight: bold;
+    }
+    .biggestH1 {
+        color:#ffffff;
+        background-color:$themeColor2;
+        padding:1rem;
+        display: inline-block;
+    }
+    .container {
+        max-width: 1280px;
+    }
+
+    .desktop-only  {
+        display: block;
+    }
+    .btn-signUp-mob {
+        display: inline-block;
+    }
+    .header {
+        display: flex;
+        justify-content: space-around;
+        .logo-img {
+            order: 1;
+        }
+        .header-menu {
+            order:2;
+        }
+        .headerBtn {
+            order:3;
+        }
+    }
+   
+    .billBoard {
+       
+        .billBoard-head {
+            
+            font-weight: bold;
+            .billBoard-head__img {
+                display: inline-block;
+                width: 20rem;
+            }
+        }
+    }
+    .billBoard-slider {
+        flex-flow: row;
+        .billBoard-buttonGroup {
+            display: block;
+        }
+        .billBoard-controls {
+            font-size: 2rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            .billBoard-numSlide {
+                width: 3.5rem;
+                height: 3.5rem;
+                text-align: center;
+
+            }
+        }
+    }
+    .arrowsBox {
+        display: inline-block;
+    }
+ }

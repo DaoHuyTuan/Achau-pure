@@ -1,0 +1,90 @@
+.desktop-only {
+    display: none;
+}
+.root {
+    width:100%;
+    background-color:#f2f2f2;
+}
+
+.header { 
+    display: flex;
+    justify-content: space-between;
+    .logo-img {
+        width:10rem;
+        order: 1;
+    }
+    .header-menu {
+        order:2;
+    }
+    .headerBtn {
+        order:3;
+    }
+}
+.col {
+    float: left;
+}
+.container-fluid {
+    background-color:#f2f2f2
+}
+.billBoard {
+    display: flex;
+    background-color:#ffffff;
+    padding-top: 3rem;
+}
+.iconButton {
+    display: inline-block;
+    cursor: pointer;
+}
+.btnfb {
+    color:#ffffff;
+    background-color:#4367b1;
+    border:1px solid #4367b1;
+    border-radius: 50px;
+    padding: 0.25rem 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.btnSignUp {
+    color:#ffffff;
+    background-color:$themeColor1;
+    border-radius: 50px;
+    border:1px solid $themeColor1;
+    padding: 0.25rem 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.btnfb:hover {
+    color:#4367b1;
+    background-color:#ffffff;
+}
+.btn-signUp-mob {
+    display: none;;
+}
+.navbar-light {
+    .navbar-collapse {
+        .nav-item {
+            margin-right: 20px;
+            .menuItem {
+                color:$themeColor2;
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: Montserrat;
+            }
+        }
+        
+    }
+}
+.biggestH1 {
+    font-family: RobotoSlab;
+}
+.header-btn-signUp {
+    background-color:$themeColor1;
+    color:#ffffff;
+    border-radius: 50px;
+    border:1px solid $themeColor1
+}
+.header-btn-signUp:hover {
+    color:$themeColor1;
+    background-color:#ffffff;
+}
