@@ -1,3 +1,6 @@
+.btn {
+    cursor: pointer;
+}
 .btn.btn-khampha {
         font-size: 0.9rem;
         display: flex;
@@ -6,5 +9,31 @@
         cursor: pointer;
         .fa-arrows-alt {
             margin-right: 0.5rem;
-        }
+    }
+}
+.content__left-btn {
+    border:1px solid $themeColor2;
+    border-radius: 50px;
+    color:$themeColor2;
+    background-color:#ffffff;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.content__left-btn:hover {
+    background-color:$themeColor2;
+    color:#ffffff;
+    border:1px solid #ffffff;
+}
+.content__right-btn {
+    border:1px solid $themeColor1;
+    border-radius: 50px;
+    color:$themeColor1;
+    background-color:#ffffff;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.content__right-btn:hover {
+    background-color:$themeColor1;
+    color:#ffffff;
+    border:1px solid #ffffff;
 }

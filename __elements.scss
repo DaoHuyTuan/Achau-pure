@@ -10,7 +10,13 @@
             width:100%;
         }
     }
-    
+}
+.header {
+    padding-left:10px;
+    padding-right:10px;
+}
+.navbar {
+    padding:0px;
 }
 .billBoard-infor {
     background-color:$themeColor1;
@@ -32,7 +38,7 @@
         align-items: center;
         padding: 0.5rem;
         display: flex;
-        font-size: 0.7rem;
+    
     }
     .infor-btn {
         width: 10rem;
@@ -56,5 +62,171 @@
     }
     .arrows-btnBack {
         order:1;
+    }
+}
+.headline {
+    background-color:$themeColor2;
+    display: inline-block;
+    font-size: 2.5rem;
+    color:#ffffff;
+    font-family: RobotoSlab;
+    text-align: center;
+    padding:1rem;
+    margin-top:3rem;
+}
+.introduction {
+    background-color:#ffffff;
+    .introduction-content { 
+        padding:3rem;
+        .introduction-img {
+            max-width: 250px;
+            max-height: 350px;
+            width: 100%;
+        }
+        .introduction-content__left, .introduction-content__right {
+            width: calc(100% - 30%);
+            display: inline-block;
+            top: 0;
+            left: 0;
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            line-height: 1.6rem;
+            color: #fff;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin: 0 auto;
+            .fa-code {
+                font-size: 4rem;
+            }
+        } 
+    }
+}
+.Footer {
+    width:100%;
+    background-color:$themeColor2;
+    #Footer-main {
+        width:100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-row-gap: 60px;
+        & .footer-head {
+            background-color:#1b85ab;
+            color:#ffffff;
+            font-size: 2.5em;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-self: center;
+            position: relative;
+            align-items: center;
+            padding:10px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            span {
+    
+            }
+            i {
+                position: absolute;
+                right:10px;
+            }
+        }
+        & .smallAbout {
+            color:#ffffff;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            max-width: 350px;
+        }
+        & .contactItem {
+            color:#ffffff;
+            font-size: 1.7em;
+            margin-bottom: 20px;
+            max-width: 350px;
+            
+            i {
+                margin-right: 10px;
+            }
+        }
+        .footer-newsItem {
+            width:100%;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            margin-bottom:20px;
+            .newsItem-img {
+                width:70px;
+                height:70px;
+                margin-right: 10px;
+                background-color:#ffffff;
+            }
+            .newsItem-content {
+                display: grid;
+                span {
+                    display: inline-block;
+                    margin-bottom:10px;
+                    font-size: 1.5em;
+                    color:#ffffff;
+                }
+            }
+        }
+        .footer-form {
+            width:100%;
+            display: grid;
+            position: relative;
+            input {
+                border:1px solid #ffffff;
+                height:50px;
+                margin-bottom: 20px;
+                padding:20px;
+                font-size: 1.5em;
+                background-color:#1b85ab;
+                color:#ffffff;
+            }
+            input::placeholder {
+                color:#ffffff;
+            }
+            .footerForm-text {
+                height:200px;
+                padding:20px;
+                font-size: 1.5em;
+                background-color:#1b85ab;
+                border:1px solid #ffffff;
+                color:#ffffff;
+                margin-bottom: 20px;
+            }
+            .footerForm-text::placeholder {
+                color:#ffffff;
+            }
+            .form-submit {
+                border:1px solid #ffffff;
+                background-color:#237fa1;
+                color:#ffffff;
+                max-width: 100px;
+                padding:10px;
+                font-size: 1.5em;
+                justify-self: flex-end;
+                cursor: pointer;
+                span {
+                    margin-right: 5px;
+                }
+
+            }
+            .form-submit:hover {
+                background-color:#ffffff;
+                border: 1px solid $themeColor2;
+                color:$themeColor2;
+            }
+        }
+        .socialItem {
+            padding:10px;
+            border-radius: 10px 0px 10px 0px;
+            margin-right: 10px;
+            border:1px solid #ffffff;
+            display: inline-block;
+            color:#ffffff;
+            min-width: 40px;
+            font-size: 1.7em;
+            margin-top: 20px;
+        }
+
     }
 }
