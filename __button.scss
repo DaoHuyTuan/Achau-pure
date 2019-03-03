@@ -37,3 +37,27 @@
     color:#ffffff;
     border:1px solid #ffffff;
 }
+.demoBtn {
+    background-color:$themeColor2;
+    color:#ffffff;
+    border:1px solid $themeColor2;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    font-weight: 600;
+    &:hover {
+        color:$themeColor2;
+        background-color:#ffffff;
+    }
+}
+.supportBtn {
+    background-color:$themeColor1;
+    color:#ffffff;
+    border:1px solid $themeColor1;
+    border-radius: 50px;
+    font-weight: 600;
+    &:hover {
+        color:$themeColor1;
+        background-color:#ffffff;
+    }
+}
+

@@ -114,6 +114,61 @@
     .introduction-left {
         margin-bottom: 20px;
     }
+    .slider2-content {
+        max-width: 100%;
+        margin-top: 0;
+        transform: unset;
+        box-shadow:none;
+        position: relative;
+    }
+    .haveBoxShadow {
+        box-shadow: 0px 2px 8px 0px #ddd;
+    }
+    .connectUs {
+        display: inline-block !important;
+        .connectLeft {
+            color:$themeColor2;
+            font-size: 2.5rem;
+            text-align: center;
+            font-family: RobotoSlab;
+            margin-bottom:1rem;
+            margin-top: 3rem;
+        }
+        .connectRight {
+            display: flex;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            input {
+                width:calc(100% - 3rem);
+                padding:1rem;
+                background-color:$bgThemColor2;
+                border:none;
+                font-size: 1.2rem;
+               
+            }
+            .fa-check {
+                padding: 1.2rem;
+                font-size: 1.2rem;
+                color:#ffffff;
+                background-color:$themeColor1;
+                cursor: pointer;
+                &:hover {
+                    background-color:#fdd700;
+                }
+            }
+        }
+    }
+    .Footer {
+        // padding: 60px;
+        #Footer-main {
+            grid-template-columns:  1fr; 
+            grid-column-gap: 30px;
+        }
+    }
+    .bgColor2 {
+        padding-bottom: 0rem;
+    }
+    
 }
 @media (min-width: 322px) {     
     html {
@@ -202,6 +257,60 @@
     .introduction-left {
         margin-bottom: 20px;
     }
+    .featureItem {
+        font-size: 1.2srem;
+    }
+     .slider2-content {
+        max-width: 100%;
+        margin-top: 0;
+        box-shadow: 0px 2px 8px 0px #ddd;
+        position: relative;
+        transform:unset;
+    }
+    .connectUs {
+
+    .connectLeft {
+        color:$themeColor2;
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: RobotoSlab;
+        margin-bottom:1rem;
+        margin-top: 3rem;
+    }
+    .connectRight {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        input {
+            width:calc(100% - 3rem);
+            padding:1rem;
+            background-color:$bgThemColor2;
+            border:none;
+            font-size: 1.2rem;
+            outline: none;
+        }
+        .fa-check {
+            padding: 1.2rem;
+            font-size: 1.2rem;
+            color:#ffffff;
+            background-color:$themeColor1;
+            cursor: pointer;
+            &:hover {
+                background-color:#fdd700;
+            }
+        }
+    }
+}
+.Footer {
+    // padding: 3rem;
+    #Footer-main {
+        grid-template-columns:  1fr; 
+        grid-column-gap: 30px;
+    }
+}
+.bgColor2 {
+    padding-bottom: 0rem;
+}
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 766px) { 
@@ -288,6 +397,9 @@
             } 
         }
     }   
+    .bgColor2 {
+        padding-bottom: 0rem;
+    }
     .headline {
         font-size: 4rem;
     }
@@ -301,10 +413,55 @@
         margin-bottom: 20px;
     }
     .Footer {
-        padding: 60px;
+        padding-top: 3rem;
         #Footer-main {
-            grid-template-columns:  1fr 1fr 1fr; 
+            grid-template-columns:  1fr; 
             grid-column-gap: 30px;
+            font-size: 0.8rem;
+            .footer-head {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .featureItem {
+        font-size: 2rem;
+    }
+    .demoBtn,.supportBtn {
+        font-size: 1.5rem;
+    }
+    .connectUs {
+
+        .connectLeft {
+            color:$themeColor2;
+            font-size: 2.5rem;
+            text-align: center;
+            font-family: RobotoSlab;
+            margin-bottom:1rem;
+            margin-top: 3rem;
+        }
+        .connectRight {
+            display: flex;
+            margin-top: 1rem;
+            justify-content: center;
+            margin-bottom: 1rem;
+            input {
+                width:calc(100% - 12rem);
+                padding:1rem;
+                background-color:$bgThemColor2;
+                border:none;
+                font-size: 1.2rem;
+                outline: none;
+            }
+            .fa-check {
+                padding: 1.2rem;
+                font-size: 1.2rem;
+                color:#ffffff;
+                background-color:$themeColor1;
+                cursor: pointer;
+                &:hover {
+                    background-color:#fdd700;
+                }
+            }
         }
     }
 }
@@ -413,6 +570,80 @@
             } 
         }
     }   
+    .featureItem {
+        font-size: 1.2rem;
+    }
+    .slider2-content {
+        font-size: 1.1rem;
+        display: inline-block;
+        background-color: #fff;
+        padding: 2rem;
+        margin-top: 50%;
+        transform: translateY(-55%);
+        position: absolute;
+        max-width: calc(100% - 23%);
+        box-shadow: 6px 0px 8px 0px #ddd;
+        .fa-quote-left {
+            top:0.7rem;
+            left:0.7rem;
+        }
+        .fa-share {
+            padding:0.5rem;
+            font-size: 1rem;
+        }
+    }
+    .headline {
+        padding:0.5rem;
+        line-height: 3rem;
+        font-size: 3rem;
+    }
+    .connectUs {
+
+        .connectLeft {
+            color:$themeColor2;
+            font-size: 2.5rem;
+            text-align: center;
+            font-family: RobotoSlab;
+            margin-bottom:2rem;
+            margin-top: 3rem;
+        }
+        .connectRight {
+            display: flex;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            justify-content: flex-start;
+            input {
+                width:calc(100% - 12rem);
+                padding:1rem;
+                background-color:$bgThemColor2;
+                border:none;
+                font-size: 1.2rem;
+                outline: none;
+               
+            }
+            .fa-check {
+                padding: 1.2rem;
+                font-size: 1.2rem;
+                color:#ffffff;
+                background-color:$themeColor1;
+                cursor: pointer;
+                &:hover {
+                    background-color:#fdd700;
+                }
+            }
+        }
+    }
+    .Footer {
+        padding-top: 3rem;
+        #Footer-main {
+            grid-template-columns:  1fr 1fr 1fr; 
+            grid-column-gap: 30px;
+            font-size: 0.5rem;
+            .footer-head {
+                font-size: 1.5rem;
+            }
+        }
+    }
  }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -489,8 +720,10 @@
         }
     }
     .introduction {
+        
+
         .introduction-content { 
-            display: inline-block;
+            display: flex;
 
             .introduction-img {
                 max-width: 500px;
@@ -528,6 +761,66 @@
     }
     .headline {
         font-size: 3rem;
-        line-height: 2rem;
+
+    }
+    .featureItem {
+        font-size: 1.5rem;
+    }
+    .slider2-content {
+        font-size: 1.1rem;
+        display: inline-block;
+        background-color: #fff;
+        padding: 3rem;
+        margin-top: 50%;
+        transform: translateY(-55%);
+        position: absolute;
+        max-width: calc(100% - 23%);
+        box-shadow: 6px 0px 8px 0px #ddd;
+        .fa-quote-left {
+            top:1rem;
+            left:1rem;
+        }
+        .fa-share {
+            padding:1rem;
+            top:0px;
+            right:0px;
+            bottom: unset;
+            font-size: 1.2rem;
+        }
+    }
+    .connectUs {
+
+        .connectLeft {
+            color:$themeColor2;
+            font-size: 2.5rem;
+            text-align: center;
+            font-family: RobotoSlab;
+            margin-bottom:2rem;
+            margin-top: 3rem;
+        }
+        .connectRight {
+            display: flex;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            justify-content: flex-start;
+            input {
+                width:calc(100% - 12rem);
+                padding:1rem;
+                background-color:$bgThemColor2;
+                border:none;
+                font-size: 1.2rem;
+                outline: none;
+            }
+            .fa-check {
+                padding: 1.2rem;
+                font-size: 1.2rem;
+                color:#ffffff;
+                background-color:$themeColor1;
+                cursor: pointer;
+                &:hover {
+                    background-color:#fdd700;
+                }
+            }
+        }
     }
  }

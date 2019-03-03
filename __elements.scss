@@ -75,7 +75,6 @@
     margin-top:3rem;
 }
 .introduction {
-    background-color:#ffffff;
     .introduction-content { 
         padding:3rem;
         .introduction-img {
@@ -105,6 +104,8 @@
 .Footer {
     width:100%;
     background-color:$themeColor2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     #Footer-main {
         width:100%;
         display: grid;
@@ -200,7 +201,7 @@
                 border:1px solid #ffffff;
                 background-color:#237fa1;
                 color:#ffffff;
-                max-width: 100px;
+              
                 padding:10px;
                 font-size: 1.5em;
                 justify-self: flex-end;
@@ -229,4 +230,96 @@
         }
 
     }
+}
+.feature-headline1 {
+    color:#ffffff;
+
+}
+.feature-headline1,.feature-headline2 {
+    font-family: RobotoSlab;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3rem;    
+}
+.feature-headline2 {
+    background-color:#ffffff;
+    color:$themeColor2;
+    padding:2rem 2rem 6rem 2rem;
+
+}
+.bgColor2 {
+    background-color:$bgThemColor1;
+    padding-bottom: 3rem;
+}
+.featureItem {
+    i {
+        color:$themeColor1;
+    }
+    color:#000000;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.slider2-content {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #ffffffff;
+    padding: 3rem;
+    margin-top: 50%;
+    // transform: translateY(-55%);
+    position: absolute;
+    max-width: calc(100% - 23%);
+    box-shadow: 6px 0px 8px 0px #ddd;
+    .fa-quote-left {
+        color:$themeColor1;
+        position: absolute;
+        top:1.5rem;
+        left:1.5rem;
+    }
+    .fa-share {
+        color:#ffffff;
+        background-color:#fdd700;
+        padding:1rem;
+        position: absolute;
+        bottom:0rem;
+        right:0rem;
+        cursor: pointer;
+    }
+}
+.slider2-pattern1 {
+    position: absolute;
+    right: 0;
+    width: 6rem;
+}
+.slider2-pattern2 {
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 6rem;
+}
+.numSlide {
+    width: 100%;
+    background-color: $themeColor2;
+    height: 100%;
+    display: inline-block;
+    height: 3.6rem;
+    color: #ffffff;
+    font-size: 2.3rem;
+    text-align: center;
+}
+.bgWhite {
+    background-color:$bgThemColor1;
+}
+.container {
+    padding:0px;
+}
+.connectUs {
+    background-color:#ffffff;
+    padding-bottom: 5rem !important;
+}
+.term {
+    background-color:#1b85ab;
+    color:#ffffff;
+    text-align: center;
+    padding: 1rem;
 }
