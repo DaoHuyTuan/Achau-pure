@@ -51,7 +51,6 @@
                 </form>
             </div>
         </div>
-
         <div class="container-fluid billBoard pt-sm-5 pt-md-5 pt-lg-5">
             <div class="container">
                 <div class="col col-xs-12 col-md-12 col-lg-6  p-0">
@@ -59,7 +58,7 @@
                         <img class="billBoard-head__img" src="./images/pattern.png" alt="">
                         <h3 class="display-4">Cơ hội trở thành</h3>
                         <strong>
-                            <h1 class="biggestH1">BLOGGER</h1>
+                            <h1 class="biggestH1" id="js-bb_SliderHead">BLOGGER</h1>
                         </strong>
                         <h3 class="display-4">nổi tiếng & tăng thu nhập từ đam mê du lịch</h3>
                         <div class="billBoard-buttonGroup">
@@ -73,23 +72,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-xs-12 col-md-12 col-lg-6  p-0">
+                <div class="col col-xs-12 col-md-12 col-lg-6 p-0 bb-shadow">
                     <div class="billBoard-slider">
                         <div class="billBoard-controls">
-                            <div class="billBoard-numSlide">
+                            <div class="billBoard-numSlide" id="js-bbnumSlide">
                                 1
                             </div>
                             <div class="arrowsBox">
-                                <div class="arrows-btnNext">
+                                <div class="arrows-btnNext" id="js-btnNext">
                                     <i class="fas fa-angle-right"></i>
                                 </div>
-                                <div class="arrows-btnBack">
+                                <div class="arrows-btnBack" id="js-btnBack">
                                     <i class="fas fa-angle-left"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="billBoard-images">
-                            <img src="./images/bb-slider1.jpg" alt="">
+                            <img id="js-bb_SliderImg" src="./images/bb-slider1.jpg" alt="">
+                            <div class="billBoard-images__boxHead">
+                                <div class="billBoard-images-head1">
+                                    - Blogger Hung Ngaytho
+                                </div>
+                                <div class="billBoard-images-head2">
+                                    Kiếm tiền từ vốn tự có và viết blog du du lich bui. Tang thu nhap thu dong tu dam me. Tai sao khong ?
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="billBoard-infor">
@@ -114,9 +121,7 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="container-fluid introduction pt-sm-5 pt-md-5 pt-lg-5">
+       <div class="container-fluid introduction pt-sm-5 pt-md-5 pt-lg-5">
 
             <div class="container introduction-content text-center">
                 <div class="col col-xs-12 col-md-12 col-lg-6 p-0 p-lg-3 introduction-left">
@@ -155,7 +160,7 @@
                                 been the industry's standard dummy text ever since the 1500s, when an unknown printer
                                 took a galley of type and scrambled it to make </span>
                         </div>
-                        <div class="btn content__right-btn">
+                        <div class="btn content__right-btn" data-toggle="modal" data-target="#signUpForm">
                             <i class="fas fa-search-plus"></i>
                             <span>XEM CHI TIET</span>
                         </div>
@@ -163,7 +168,7 @@
                 </div>
             </div>
         </div>
-
+          
         <div class="container">
             <div class="col-sm-12 col-md-12 col-lg-12 text-center feature-headline1">
                 <span class="headline">CÔNG CỤ QUẢN LÝ VÀ</span>
@@ -241,7 +246,15 @@
                         </div>
                     </div>
                     <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-11 p-md-0 p-lg-0">
-                        <img class="img-fluid" src="./images/bb-slider3.jpg" alt="">
+                        <img class="billBoard-images img-fluid" src="./images/bb-slider3.jpg" alt="">
+                        <div class="billBoard-images__boxHead">
+                            <div class="billBoard-images-head1">
+                                - Blogger Hung Ngaytho
+                            </div>
+                            <div class="billBoard-images-head2">
+                                Kiếm tiền từ vốn tự có và viết blog du du lich bui. Tang thu nhap thu dong tu dam me. Tai sao khong ?
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div
@@ -281,7 +294,6 @@
 
             </div>
         </div>
-
         <div class="container-fluid p-0">
             <div class="Footer pt-4 pt-sm-4">
                 <div class="container">
@@ -373,9 +385,51 @@
             </div>
         </div>
         <div class="container-fluid term">
-                Copyright © 2016 GOLDEN SCORE - Số chứng nhận sản phẩm (số visa
+            Copyright © 2016 GOLDEN SCORE - Số chứng nhận sản phẩm (số visa
         </div>
 
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="signUpForm" tabindex="-1" role="dialog" aria-labelledby="signUpFormTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    
+                    <div class="form-group pb-3">
+                        <h1 class="text-center">Dang ky ACHAU ID</h1>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Phone">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Dong y voi dieu khoan dich vu</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary">Back</button>
+              <button type="button" class="btn btn-primary">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -387,6 +441,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-<script src="./slider2.js"></script>
+<script src="./js/billBoardSlider.js"></script>
+<script src="./js/carousel.js"></script>
 
 </html>

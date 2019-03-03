@@ -1,15 +1,21 @@
 .btn {
     cursor: pointer;
 }
-.btn.btn-khampha {
+.btn-khampha {
         font-size: 0.9rem;
         display: flex;
         align-items: center;
         color:#ffffff;
         cursor: pointer;
+        width: 100%;
+        justify-content: center;
         .fa-arrows-alt {
             margin-right: 0.5rem;
-    }
+         }
+}
+.btn-khampha:hover {
+    background-color:#fdd700;
+    color:#ffffff;
 }
 .content__left-btn {
     border:1px solid $themeColor2;

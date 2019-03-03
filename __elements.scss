@@ -3,12 +3,19 @@
     .billBoard-numSlide  {
         color:#ffffff;
         background-color:$themeColor2;
+      
     }
-   
+    #js-bb_SliderHead {
+        transition: 0.5s;
+    }
     .billBoard-images {
+        
         img {
             width:100%;
         }
+    }
+    #js-bb_SliderImg {
+        transition: 0.5s;
     }
 }
 .header {
@@ -43,10 +50,17 @@
     .infor-btn {
         width: 10rem;
         display: flex;
+        max-height: 4rem;
+        height: 4rem;
         color:#ffffff;
         justify-content: center;
         align-self: center;
+        &:hover {
+            background-color:#fdd700;
+            color:#ffffff;
+        }    
     }
+
 }
 .arrowsBox {
   
@@ -322,4 +336,7 @@
     color:#ffffff;
     text-align: center;
     padding: 1rem;
+}
+.bb-shadow {
+    box-shadow:0px 0px 10px 2px #dddddd;
 }
