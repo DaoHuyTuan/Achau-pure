@@ -724,6 +724,132 @@
             max-width: 30rem;
         }
     }
+    .modal-dialog  {
+        background-color:#ffffff;
+        height: 768px;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        min-height: 768px;
+        max-width: 960px;
+    }
+    .modal-header {
+        border:none;
+    }
+    .modal-footer {
+        border:none;
+    }
+    .form-control {
+        height:calc(1.5em + 1.7rem + 2px);
+        font-size: 1.5rem;
+    }
+    .modal-content  {
+        max-width: 1366px;
+        height: 768px;
+    }
+    .form-check-label {
+        font-size: 1.2rem;
+    }
+    //my form
+    .form-signUp {
+        width:500px;
+        border-radius: 17px;
+        box-shadow: 0px 0px 13px 4px #d4d3d3;
+        padding:3rem;
+        margin:0 auto;
+    }
+    .form-numSlide {
+        font-size: 3.8rem;
+        color:#4d4d4d;
+        font-family: RobotoSlab;
+        margin-right: 1rem;
+        font-weight: bold;
+    }
+    .form-titleSlide {
+        font-size: 1.7rem;
+        color:#4d4d4d;
+        font-family: RobotoSlab;
+        font-weight: bold;
+    }
+    .form-dangky {
+        color:#5bbbd9;
+        font-size: 1.56rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    .form-input {
+        width: 400px;
+        border:none;
+        background-color:#f2f2f2;
+        margin-bottom: 20px;
+        padding:10px;
+        .form-input::placeholder {
+            color:#000000;
+            font-size: 0.9rem;
+        }
+    }
+    .form-btnSignUp {
+        width:300px;
+        border:1px solid #5bbbd9;
+        color:#5bbbd9;
+        padding:0.5rem 1rem 0.5rem 1rem;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+        &:hover {
+            background-color:#5bbbd9;
+            color:#ffffff;
+        }
+    }
+    .form-check {
+        margin-bottom: 2rem;
+        .form-check-input {
+
+        }
+        .form-check-label {
+            font-size: 1rem;
+        }
+    }
+    .form-txt-signIn {
+        color:#5bbbd9;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .step-img {
+        width: 360px;
+        height: 320px;
+        margin-bottom: 2rem;
+    }
+    .form-step2-listtxt {
+        margin-bottom: 0.5rem;
+    }
+    .form-btnBack, .form-btnNext {
+        width:100px;
+        height:40px;
+    }
+    .form-btnBack {
+        border:1px solid #9d71f1;
+        color :#9d71f1;
+        margin-right: 20px;
+        &:hover {
+            background-color:#9d71f1;
+            color :#ffffff;
+        }
+    }
+    .form-btnNext {
+        border:1px solid #5bbbd9;
+        color :#5bbbd9;
+        &:hover {
+            color:#ffffff;
+            background-color:#5bbbd9;
+        }
+    }
+    .form-btnFinish {
+        background-color:#00e990;
+        color:#ffffff;
+        width:150px;
+        height: 40px;
+        border:none;
+    }
  }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -927,9 +1053,18 @@
     }
     //modal 
     .modal-dialog  {
-        max-width: 700px;
+        background-color:#ffffff;
+        height: 768px;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        min-height: 768px;
+        max-width: 1280px;
     }
     .modal-header {
+        border:none;
+    }
+    .modal-footer {
         border:none;
     }
     .form-control {
@@ -937,11 +1072,241 @@
         font-size: 1.5rem;
     }
     .modal-content  {
-        height:700px;
-        width:700px;
+        max-width: 1366px;
+        height: 768px;
     }
     .form-check-label {
         font-size: 1.2rem;
     }
+    //my form
+    .form-signUp {
+        width:500px;
+        border-radius: 17px;
+        box-shadow: 0px 0px 13px 4px #d4d3d3;
+        padding:3rem;
+        margin:0 auto;
+    }
+    .form-numSlide {
+        font-size: 3.8rem;
+        color:#4d4d4d;
+        font-family: RobotoSlab;
+        margin-right: 1rem;
+        font-weight: bold;
+    }
+    .form-titleSlide {
+        font-size: 1.7rem;
+        color:#4d4d4d;
+        font-family: RobotoSlab;
+        font-weight: bold;
+    }
+    .form-dangky {
+        color:#5bbbd9;
+        font-size: 1.56rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    .form-input {
+        width: 400px;
+        border:none;
+        background-color:#f2f2f2;
+        margin-bottom: 20px;
+        padding:10px;
+        .form-input::placeholder {
+            color:#000000;
+            font-size: 0.9rem;
+        }
+    }
+    .form-btnSignUp {
+        width:300px;
+        border:1px solid #5bbbd9;
+        color:#5bbbd9;
+        padding:0.5rem 1rem 0.5rem 1rem;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+        &:hover {
+            background-color:#5bbbd9;
+            color:#ffffff;
+        }
+    }
+    .form-check {
+        margin-bottom: 2rem;
+        .form-check-input {
+
+        }
+        .form-check-label {
+            font-size: 1rem;
+        }
+    }
+    .form-txt-signIn {
+        color:#5bbbd9;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .step-img {
+        width: 360px;
+        height: 320px;
+        margin-bottom: 2rem;
+    }
+    .form-step2-listtxt {
+        margin-bottom: 0.5rem;
+    }
+    .form-btnBack, .form-btnNext {
+        width:100px;
+        height:40px;
+    }
+    .form-btnBack {
+        border:1px solid #9d71f1;
+        color :#9d71f1;
+        margin-right: 20px;
+        &:hover {
+            background-color:#9d71f1;
+            color :#ffffff;
+        }
+    }
+    .form-btnNext {
+        border:1px solid #5bbbd9;
+        color :#5bbbd9;
+        &:hover {
+            color:#ffffff;
+            background-color:#5bbbd9;
+        }
+    }
+    .form-btnFinish {
+        background-color:#00e990;
+        color:#ffffff;
+        width:150px;
+        height: 40px;
+        border:none;
+    }
+
 
  }
+@media (min-width:1366px) { 
+    //modal 
+    .modal-dialog  {
+        background-color:#ffffff;
+        height: 768px;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        min-height: 768px;
+        max-width: 1366px;
+    }
+    .modal-header {
+        border:none;
+    }
+    .modal-footer {
+        border:none;
+    }
+    .form-control {
+        height:calc(1.5em + 1.7rem + 2px);
+        font-size: 1.5rem;
+    }
+    .modal-content  {
+        max-width: 1366px;
+        height: 768px;
+    }
+    .form-check-label {
+        font-size: 1.2rem;
+    }
+    //my form
+    .form-signUp {
+        width:500px;
+        border-radius: 17px;
+        box-shadow: 0px 0px 13px 4px #d4d3d3;
+        padding:3rem;
+        margin:0 auto;
+    }
+    .form-numSlide {
+        font-size: 3.8rem;
+        color:#4d4d4d;
+        font-family: RobotoSlab;
+        margin-right: 1rem;
+        font-weight: bold;
+    }
+    .form-titleSlide {
+        font-size: 1.7rem;
+        color:#4d4d4d;
+        font-family: RobotoSlab;
+        font-weight: bold;
+    }
+    .form-dangky {
+        color:#5bbbd9;
+        font-size: 1.56rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    .form-input {
+        width: 400px;
+        border:none;
+        background-color:#f2f2f2;
+        margin-bottom: 20px;
+        padding:10px;
+        .form-input::placeholder {
+            color:#000000;
+            font-size: 0.9rem;
+        }
+    }
+    .form-btnSignUp {
+        width:300px;
+        border:1px solid #5bbbd9;
+        color:#5bbbd9;
+        padding:0.5rem 1rem 0.5rem 1rem;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+        &:hover {
+            background-color:#5bbbd9;
+            color:#ffffff;
+        }
+    }
+    .form-check {
+        margin-bottom: 2rem;
+        .form-check-input {
+
+        }
+        .form-check-label {
+            font-size: 1rem;
+        }
+    }
+    .form-txt-signIn {
+        color:#5bbbd9;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .step-img {
+        width: 360px;
+        height: 320px;
+        margin-bottom: 2rem;
+    }
+    .form-step2-listtxt {
+        margin-bottom: 0.5rem;
+    }
+    .form-btnBack, .form-btnNext {
+        width:100px;
+        height:40px;
+    }
+    .form-btnBack {
+        border:1px solid #9d71f1;
+        color :#9d71f1;
+        margin-right: 20px;
+        &:hover {
+            background-color:#9d71f1;
+            color :#ffffff;
+        }
+    }
+    .form-btnNext {
+        border:1px solid #5bbbd9;
+        color :#5bbbd9;
+        &:hover {
+            color:#ffffff;
+            background-color:#5bbbd9;
+        }
+    }
+    .form-btnFinish {
+        background-color:#00e990;
+        color:#ffffff;
+        width:150px;
+        height: 40px;
+        border:none;
+    }
+}
